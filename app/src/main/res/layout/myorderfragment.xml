@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_toLeftOf="@id/myordersback"
+            android:layout_marginRight="@dimen/topmargin"
+            style="@style/Title"
+            android:text="الطلبات" />
+        <ImageView
+            android:id="@+id/myordersback"
+            android:layout_width="@dimen/iconwidth2"
+            android:layout_height="@dimen/iconheight2"
+            android:src="@drawable/back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/topmarginless"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerOffer3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/topmarginless"
+        android:orientation="horizontal" />
+</LinearLayout>

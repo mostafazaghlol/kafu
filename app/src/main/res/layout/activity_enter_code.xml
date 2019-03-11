@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/topmargin"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/TXT"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginlogo"
+        android:gravity="center"
+        android:text="الكود"
+        android:textColor="@color/black" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/EdLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TXT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/topmargin2"
+        android:layout_marginTop="@dimen/topmargin"
+        android:layout_marginRight="@dimen/topmargin2"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/name"
+            android:textSize="@dimen/mid" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/EdLoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdLoginEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/topmargin2"
+        android:layout_marginTop="@dimen/topmargin"
+        android:layout_marginRight="@dimen/topmargin2">
+
+        <EditText
+            android:id="@+id/EdCodeMissed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/code"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/mid" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+
+        android:id="@+id/Btmissedx"
+        style="@style/button"
+        android:layout_below="@id/EdLoginPass"
+        android:text="انهاء" />
+
+    <Button
+        android:id="@+id/BtLoginlogin2"
+        style="@style/wbutton"
+        android:layout_below="@id/Btmissedx"
+        android:text="@string/register"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/forgetpasww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtLoginlogin2"
+        android:layout_marginTop="@dimen/topmargin"
+        android:background="#77FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgetpass"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/mid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgetpass1"
+            android:textSize="@dimen/mid" />
+    </LinearLayout>
+
+
+</RelativeLayout>

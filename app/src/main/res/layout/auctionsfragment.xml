@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/colorPrimary">
+
+        <TextView
+
+            style="@style/Title"
+            android:text="المزادات" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/emauction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لا توجد مزادات"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"/>
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="10dp"
+            android:padding="10dp"
+            android:columnWidth="120dp"
+            android:stretchMode="spacingWidthUniform"
+            android:gravity="center"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

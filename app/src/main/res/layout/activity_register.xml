@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.LoginActivity">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/topmargin"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register2"
+        style="@style/Title"
+        android:gravity="center"
+        android:layout_below="@id/loginlogo"
+        android:textColor="@color/black"
+        android:id="@+id/TXT"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/TXT">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/topmargin"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+
+            <EditText
+                android:id="@+id/Edname"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/topmargin"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+
+            <EditText
+                android:id="@+id/Edemail"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/topmargin"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+
+            <EditText
+                android:id="@+id/Edpassword"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/topmargin"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+
+            <EditText
+                android:id="@+id/Edpassword2"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="@string/password2"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/topmargin"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+
+            <EditText
+                android:id="@+id/EdphoneNumber"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="@string/number" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/locationxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:layout_marginTop="@dimen/topmargin"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/loc"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:id="@+id/textlocation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="الموقع"
+                android:gravity="center"
+                android:textColor="#445544"
+                android:textSize="@dimen/mid"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#eeeeee"
+            android:layout_marginRight="@dimen/topmargin2"
+            android:layout_marginLeft="@dimen/topmargin2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cairo"
+            android:paddingRight="@dimen/topmargin2"
+            android:background="#99ffffff"
+            android:layout_marginTop="@dimen/topmargin"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#99ffffff"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/buyer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user"
+                    android:layoutDirection="rtl"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:background="#99ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/addiveser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="معلن"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layoutDirection="rtl"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginTop="10dp"
+                    />
+            <Spinner
+                android:id="@+id/SpCities"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner_rect"
+                android:entries="@array/fisrt"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:textColorHint="@color/colorPrimary" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#99ffffff"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/mandoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mandoob"
+                    android:layoutDirection="rtl"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+        <Button
+            style="@style/button"
+            android:layout_below="@id/EdLoginPass"
+            android:text="@string/register"
+            android:id="@+id/Btsignup"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+          </RelativeLayout>
+      </ScrollView>
+
+</RelativeLayout>

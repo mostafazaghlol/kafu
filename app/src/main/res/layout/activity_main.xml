@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeffffff"
+    tools:context=".Activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity"
+        android:layout_above="@id/navigationView"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#ffffff"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        app:itemTextAppearanceActive="?android:textAppearanceSmall"
+        app:itemTextAppearanceInactive="?android:textAppearanceSmall"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation"
+        android:theme="@style/Widget.BottomNavigationView" />
+
+</RelativeLayout>

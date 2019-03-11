@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">الكفو</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">تسجيل حساب جديد</string>
+    <string name="forgetpass1">هل نسيت كلمة المرور ؟</string>
+    <string name="forgetpass">استرجاع كلمة المرور</string>
+    <string name="Editerror">لم يتم وضع القيمه هنا</string>
+    <string name="loading">جارى التحميل</string>
+    <string name="name">اسم المستخدم</string>
+    <string name="loginerorr">تأكد من البيانات الخاصه بك !</string>
+    <string name="internet_error">غير متصل بالانترنت</string>
+    <string name="request">يجب الموافقه على بعض السماحيات</string>
+    <string name="register2">تسجيل جديد</string>
+    <string name="password2">تأكيد كلمة المرور</string>
+    <string name="number">رقم الهاتف</string>
+    <string name="loction">الموقع</string>
+    <string name="type">نوع المستخدم</string>
+    <string name="user">مشترى</string>
+    <string name="mandoob">مندوب</string>
+    <string name="shohnadata">بيانات الشحنه</string>
+    <string name="registershohna">بيانات الشحنه</string>
+    <string name="photo">الصوره الشخصيه</string>
+    <string name="photo_shohna">صور المركبة</string>
+    <string name="price">قيمة التوصيل</string>
+    <string name="typeofshohna">نوع الحمل</string>
+    <string name="model">الموديل</string>
+    <string name="account">الملف الشخصي</string>
+    <string name="orders">الطلبات</string>
+    <string name="majadaty">مزاداتى</string>
+    <string name="fawteer">الفواتير</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="aboutapp">عن التطبيق</string>
+    <string name="shroot">الشروط والاحكام</string>
+    <string name="settings">الاعدادت</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="nesadd">اضافة عرض جديد</string>
+    <string name="passerror">كلمة المرور غير متطابقه</string>
+    <string name="code">الكود</string>
+    <string-array name="fisrt">
+        <item>اختر من القائمة</item>
+    </string-array>
+    <string-array name="cats">
+        <item>حدد القسم</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>حدد النوع</item>
+    </string-array>
+
+</resources>

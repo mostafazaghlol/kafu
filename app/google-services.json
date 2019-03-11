@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "168241423756",
+    "firebase_url": "https://kafu-dc56b.firebaseio.com",
+    "project_id": "kafu-dc56b",
+    "storage_bucket": "kafu-dc56b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168241423756:android:d3d03f1443833183",
+        "android_client_info": {
+          "package_name": "com.eltamiuzcom.kafu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168241423756-3je1qdc4pkfas23r1tfq556544udsb87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eltamiuzcom.kafu",
+            "certificate_hash": "11da794b10bdfe61b650e7a5a5cab842c6562dc6"
+          }
+        },
+        {
+          "client_id": "168241423756-v5t89h51fkmphf3b22jnd2s8e6bn9e2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNBoC4w15cjJxEUy2HKJGGpZCGXIjK0Dc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168241423756-v5t89h51fkmphf3b22jnd2s8e6bn9e2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

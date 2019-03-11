@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardrad"
+    app:cardElevation="@dimen/elevation">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/fackphoto"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:id="@+id/offer_image_offer"
+            app:riv_corner_radius_top_right="@dimen/cardrad"
+            app:riv_corner_radius_bottom_right="@dimen/cardrad"/>
+        <TextView
+            style="@style/data"
+            android:id="@+id/offer_title_offer"
+            android:layout_marginTop="@dimen/topmarginless"
+            android:layout_toLeftOf="@id/offer_image_offer"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:text="محصول أرز عالى الجودة"
+            android:textSize="@dimen/small"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            style="@style/data"
+            android:id="@+id/offer_price_offer"
+            android:layout_marginTop="@dimen/topmarginless"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/offer_title_offer"
+            android:textColor="@color/colorAccent"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:text="1200 ريال"
+            android:textSize="@dimen/small"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/offer_by_offer"
+            android:layout_marginTop="@dimen/topmarginless"
+            android:layout_toLeftOf="@id/offer_image_offer"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/offer_title_offer"
+            android:text="جون در"
+            android:textStyle="bold"
+            android:textSize="@dimen/small"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

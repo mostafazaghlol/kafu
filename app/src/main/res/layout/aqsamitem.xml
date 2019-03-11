@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="100dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardrad"
+    app:cardElevation="@dimen/elevation">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_corner_radius="@dimen/cardrad"
+        android:id="@+id/qsmimage"
+        android:src="@drawable/fackphoto"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:text="محصول"
+        android:id="@+id/qsmtitle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/small"
+        android:background="#44000000"/>
+</android.support.v7.widget.CardView>

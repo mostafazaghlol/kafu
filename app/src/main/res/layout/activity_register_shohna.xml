@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/loginlogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/topmargin"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/TXT"
+                style="@style/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginlogo"
+                android:text="@string/registershohna"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/TXT"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/personalphoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phto"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo"
+                        android:gravity="center"
+                        android:textColor="#556655"
+                        android:textSize="@dimen/mid"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2"/>
+                <LinearLayout
+                    android:id="@+id/markbaphoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phto"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo_shohna"
+                        android:gravity="center"
+                        android:textColor="#556655"
+                        android:textSize="@dimen/mid"
+                        />
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/Edpricex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/price"
+                        android:inputType="numberDecimal" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/EdTypeheml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/typeofshohna"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/EdModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/model"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/EdLocation24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="امكانية التوصيل"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/markbalocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/loc"
+                        />
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="موقع المركبه الدائم"
+                        android:gravity="center"
+                        android:textColor="#556655"
+                        android:textSize="@dimen/mid"
+                        />
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee"
+                    android:layout_marginRight="@dimen/topmargin2"
+                    android:layout_marginLeft="@dimen/topmargin2"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/Edsafty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="نسبة امان المركبة"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TXT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/topmargin2"
+                    android:layout_marginTop="@dimen/topmargin"
+                    android:layout_marginRight="@dimen/topmargin2">
+
+                    <EditText
+                        android:id="@+id/Edsecurityofmontage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="نسبة المحافظه على المنتج"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Btfinish"
+                    style="@style/button"
+                    android:layout_below="@id/EdLoginPass"
+                    android:layout_marginBottom="10dp"
+                    android:text="تأكيد البيانات" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

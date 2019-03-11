@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/colorPrimary">
+
+        <TextView
+
+            style="@style/Title"
+            android:text="العروض" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+
+                style="@style/subTitle"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/topmarginless"
+                android:text="الاقسام" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerAqsam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topmarginless"
+                android:layout_marginBottom="@dimen/topmargin"
+                android:orientation="horizontal" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerOffer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topmarginless"
+                android:layout_marginBottom="@dimen/topmarginless"
+                android:orientation="horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا يوجد عروض"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/emptybestoffersz"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

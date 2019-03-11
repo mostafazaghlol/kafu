@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardrad"
+    app:cardElevation="@dimen/elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/offer_image_offer2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fackphoto"
+            app:riv_corner_radius_top_left="@dimen/cardrad"
+            app:riv_corner_radius_top_right="@dimen/cardrad" />
+
+        <TextView
+            android:id="@+id/offer_title_offer2"
+            style="@style/data"
+            android:text="محصول أرز عالى الجودة"
+            android:textSize="@dimen/smallx" />
+
+        <TextView
+            android:id="@+id/offer_time_offer2"
+            style="@style/data"
+            android:text="سينتهى فى 22:10"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/smallx" />
+
+        <TextView
+            android:id="@+id/offer_price_offer2"
+            style="@style/data"
+            android:layout_marginBottom="10dp"
+            android:text="يبدا ب 200 ريال سعودى"
+            android:padding="1dp"
+            android:textSize="@dimen/smallx" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

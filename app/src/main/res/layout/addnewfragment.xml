@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_toLeftOf="@id/aboutback"
+            android:layout_marginRight="@dimen/topmargin"
+            style="@style/Title"
+            android:text="اضافة عرض جديدد" />
+        <ImageView
+            android:id="@+id/addnewback"
+            android:layout_width="@dimen/iconwidth2"
+            android:layout_height="@dimen/iconheight2"
+            android:src="@drawable/back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/topmarginless"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EdAdress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/editshapewhite"
+                    android:hint="ادخل العوان هنا " />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/Sptypes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_rect_15"
+                    android:entries="@array/type"
+                    android:hint="ادخل العوان هنا " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="النوع"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/SpCats"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_rect_15"
+                    android:entries="@array/cats"
+                    android:hint="ادخل العوان هنا " />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="القسم"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EdWazin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/editshapewhite"
+                    android:inputType="number"
+                    android:entries="@array/type"
+                    android:hint="حدد الوزن" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="الوزن"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/EdLength"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/editshapewhite"
+                    android:inputType="number"
+                    android:entries="@array/cats"
+                    android:hint="حدد الطول " />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="الطول"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/SpLabanatypes"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:background="@drawable/spinner_rect_15"
+                    android:entries="@array/type"
+                    android:hint="ادخل العوان هنا " />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="نوع اللبانة"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/BtaddImages"
+                    style="@style/wrabbutton"
+                    android:layout_below="@id/EdLoginPass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/topmarginless"
+                    android:background="@drawable/buttonshapewhitegreen"
+                    android:gravity="center"
+                    android:text="اضافة الصور"
+                    android:textColor="@color/colorPrimary" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Rephotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EdDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:layout_weight="1"
+                    android:background="@drawable/editshapewhite"
+                    android:entries="@array/type"
+                    android:gravity="top"
+                    android:hint="وصف المنتج"
+                    android:padding="@dimen/topmargin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="الوصف"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EdPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/topmargin"
+                    android:background="@drawable/editshapewhite"
+                    android:gravity="top"
+                    android:hint="حدد السعر" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="السعر"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BtaddSure"
+                style="@style/wrabbutton"
+                android:layout_below="@id/EdLoginPass"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/field"
+                android:text="تأكيد" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:layout_height="match_parent"
+        android:icon="@drawable/home"
+        android:title="الرئيسية" />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/offers"
+        android:title="العروض" />
+
+    <item
+        android:id="@+id/navigation_majad"
+        android:icon="@drawable/auction"
+        android:title="المزادات" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/more"
+        android:title="المزيد" />
+</menu>

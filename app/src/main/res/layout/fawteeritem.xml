@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/buttonshapewithoutcur"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/Txtmontagename"
+            style="@style/texts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="محصول ارز حديث الانتاج"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mid"/>
+        <TextView
+            style="@style/texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم الصفقه"
+            android:layout_marginRight="@dimen/topmarginless"
+            android:layout_marginLeft="@dimen/topmarginless"
+
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/mid"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/Txtfatweerweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="200 "
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الوزن"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/Txtfatweertype1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="النوع 1 "
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="النوع"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/Txtfatweerdate"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="29/1/2019"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التاريخ"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/TxtfatweerLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="200"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الطول"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/TxtFatweertype1x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="نوع 1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نوع المنتج "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/topmarginless"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/texts"
+                    android:id="@+id/TxtfatweerlabanaType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/topmarginless"
+                    android:text="نوع 1"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نوع اللبانة"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Txtfatweerpricetpo"
+                style="@style/texts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="2000 ريال"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid"/>
+            <TextView
+                style="@style/texts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="المبلغ المطلوب"
+                android:layout_marginRight="@dimen/topmarginless"
+                android:layout_marginLeft="@dimen/topmarginless"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/mid"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field2"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Txtfatweerpricetponame"
+                style="@style/texts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="عبد الرحمن محمد"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid"/>
+            <TextView
+                style="@style/texts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="الى العضو"
+                android:layout_marginRight="@dimen/topmarginless"
+                android:layout_marginLeft="@dimen/topmarginless"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/mid"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Txtfatweermandoopname"
+                style="@style/texts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="محمد محمد"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid"/>
+            <TextView
+                style="@style/texts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="اسم المندوب"
+                android:layout_marginRight="@dimen/topmarginless"
+                android:layout_marginLeft="@dimen/topmarginless"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/mid"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field2"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Txtfatweermandoopprice"
+                style="@style/texts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="500 ريال"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid"/>
+            <TextView
+                style="@style/texts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="تكلفة المندوب"
+                android:layout_marginRight="@dimen/topmarginless"
+                android:layout_marginLeft="@dimen/topmarginless"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/mid"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Txtfatweerfullprice"
+                style="@style/texts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 ريال"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mid"/>
+            <TextView
+                style="@style/texts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="التكلفة الكلية "
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/topmarginless"
+                android:layout_marginLeft="@dimen/topmarginless"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/mid"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/colorPrimary">
+
+        <TextView
+
+            style="@style/Title"
+            android:text="الرئيسية" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+
+                style="@style/subTitle"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/topmarginless"
+                android:text="الاقسام" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerAqsam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/subTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/topmarginless"
+                    android:text="أفضل العروض" />
+
+                <TextView
+
+                    style="@style/subTitle"
+                    android:id="@+id/TxtallBest"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/topmarginless"
+                    android:text="الكل"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerBestAdds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topmarginless2"
+                android:layout_marginBottom="@dimen/topmarginless2"
+                android:orientation="horizontal"
+                android:visibility="visible"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا يوجد عروض"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/emptybestoffers"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/subTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/topmarginless"
+                    android:text="أحدث المنتجات" />
+
+                <TextView
+
+                    android:id="@+id/TxtallRecent"
+                    style="@style/subTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/topmarginless"
+                    android:text="الكل"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/mid"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerRecentAdds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topmarginless2"
+                android:layout_marginBottom="@dimen/topmarginless2"
+                android:orientation="horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا توجد منتجات"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/emptyoffers"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
